@@ -18,7 +18,7 @@ function onSubmitForm(event) {
 
 // перевірка  значень введених в поля форми
   
-  if (delay.value <= 0 || step.value <= 0 || amount.value < 0) {
+  if (delay.value < 0 || step.value < 0 || amount.value < 0) {
     Notiflix.Notify.warning(`❗ Please enter a positive number`);
   }
   else {
